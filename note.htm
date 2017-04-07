@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>note</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h4>css</h4>
+    <ol>
+        <li>
+            <a href="#multiline">css多行省略</a>
+        </li>
+    </ol>
+    <h4>js</h4>
+    <ol>
+        <li><a href="#pattern">正则模式匹配用法</a></li>
+    </ol>
+    <h4>html</h4>
+    <a name="pattern"><h4>css多行省略</h4></a>
+    <pre>
+    overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;   		
+    </pre>
+    <a name="pattern"><h4>正则模式匹配用法</h4></a>
+    <pre>
+    var d="2013-04-05";
+    /(\d{4})\-(\d{2})\-(\d{2})/gi.test(d);
+    console.log(RegExp.$1+"/"+RegExp.$2);
+
+    var d="2013-04-05";
+    var result=d.replace(/(\d{4})\-(\d{2})\-(\d{2})/gi,"$1-$2");
+    console.log(result);    		
+    </pre>
+</body>
+
+</html>
