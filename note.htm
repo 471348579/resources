@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>note</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -13,6 +14,7 @@
         <li>
             <a href="#multiline">css多行省略</a>
         </li>
+        <li><a href="#flex">flex布局</a></li>
     </ol>
     <h4>js</h4>
     <ol>
@@ -26,6 +28,26 @@
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;   		
+    </pre>
+    <a name="flex">
+        <h4>flex布局</h4>
+    </a>
+    <pre>
+/* ============================================================
+   flex：定义布局为盒模型
+   flex-v：盒模型垂直布局
+   flex-1：子元素占据剩余的空间
+   flex-align-center：子元素垂直居中
+   flex-pack-center：子元素水平居中
+   flex-pack-justify：子元素两端对齐
+   兼容性：ios 4+、android 2.3+、winphone8+
+   ============================================================ */
+.flex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+.flex-v{-webkit-box-orient:vertical;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+.flex-1{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;}
+.flex-align-center{-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;}
+.flex-pack-center{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}
+.flex-pack-justify{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}
     </pre>
     <a name="pattern"><h4>正则模式匹配用法</h4></a>
     <pre>
